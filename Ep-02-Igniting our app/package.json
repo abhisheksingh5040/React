@@ -1,0 +1,25 @@
+{
+  "name": "ep-02-igniting-our-app",
+  "version": "1.0.0",
+  "description": "This is React basic",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abhisheksingh5040/React.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "Abhishek Singh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abhisheksingh5040/React/issues"
+  },
+  "homepage": "https://github.com/abhisheksingh5040/React#readme",
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
+}
