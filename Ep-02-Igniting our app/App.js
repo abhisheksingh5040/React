@@ -1,14 +1,5 @@
-// const heading = React.createElement("h1",
-//     { id: "heading"},
-//     "Hello world for React!");
-
-
-// console.log(heading);//object
-
-// const root = ReactDOM.createRoot(document.getElementById("root"));
-
-// root.render(heading);// it will take an object and make an html tag.<h1 id="heading">Hello world for React!</h1>
-
+import React from "react";
+import ReactDOM from "react-dom";
 
 /**
  * <div id="parent">
