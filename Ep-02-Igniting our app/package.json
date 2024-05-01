@@ -1,8 +1,7 @@
 {
   "name": "ep-02-igniting-our-app",
   "version": "1.0.0",
-  "description": "This is React basic",
-  "main": "App.js",
+  "description": "This is an react app",
   "scripts": {
     "test": "jest"
   },
@@ -10,10 +9,7 @@
     "type": "git",
     "url": "git+https://github.com/abhisheksingh5040/React.git"
   },
-  "keywords": [
-    "react"
-  ],
-  "author": "Abhishek Singh",
+  "author": "Abhishek singh",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/abhisheksingh5040/React/issues"
@@ -26,8 +22,5 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
-  },
-  "browserlist": [
-    "last 2 versions"
-  ]
+  }
 }
