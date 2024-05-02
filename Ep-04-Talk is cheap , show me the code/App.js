@@ -72,16 +72,6 @@ const Body = () => {
             <RestaurantCard/>
             <RestaurantCard/>
             <RestaurantCard/>
-            <RestaurantCard/>
-            <RestaurantCard/>
-            <RestaurantCard/>
-            <RestaurantCard/>
-            <RestaurantCard/>
-            <RestaurantCard/>
-            <RestaurantCard/>
-            <RestaurantCard/>
-            <RestaurantCard/>
-            <RestaurantCard/>
         </div>
         </div>
     )
