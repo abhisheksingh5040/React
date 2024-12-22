@@ -16,6 +16,7 @@
 
 .res-card-logo {
   width: 100%;
+  height: 30vh;
 }
 
 .nav-items > ul > li {
@@ -25,8 +26,7 @@
 
 .res-card {
   width: 200px;
-  height: 300px;
-  margin: 5px;
+  margin: 4px;
 }
 
 .res-card:hover {
