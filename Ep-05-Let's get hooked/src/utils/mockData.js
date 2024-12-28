@@ -1,97 +1,5 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
 
-/**
- * 
- * Header
- * - Logo
- * - Nav Items
- * Body
- * -Search
- * -RestaurantContainer
- *   -RestaurantCard
- * Footer
- * -Copyright
- * -Links
- * -Address
- * -Contact
- * 
- */
-
-const Header = () => {
-    return (
-        <div className="header">
-            <div className="logo"> 
-            {/* { <img src="https://c8.alamy.com/comp/2C3RP2B/fast-food-logo-idea-burgerhotdog-baguettes-logo-inspiration-2C3RP2B.jpg"/> } */}
-            </div>
-            <div className="nav-items">
-                <ul>
-                    <li>Home</li>
-                    <li>About Us</li>
-                    <li>Contact Us</li>
-                    <li>Cart</li>
-                </ul>
-            </div>
-        </div>
-    )
-}
-
-const styleColor = {
-    backgroundColor: "#f0f0f0",
-}
-
-const RestaurantCard = (props) => {
-
-    const { restData } = props;
-
-    const {
-        cloudinaryImageId,
-        name,
-        areaName,
-        avgRating,
-        cuisines,
-        costForTwo,
-        deliveryTime,
-  } = restData?.info;
-
-    return (
-        <div className="res-card" style={styleColor}>
-            <img alt={`${name} logo`} className="res-card-logo"
-             src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" + cloudinaryImageId}/>
-            <h3>{name}</h3>
-            <h4>{cuisines.join(", ")}</h4>
-            <h4>{avgRating} ratings</h4>
-            <h4>{deliveryTime / 100} minutes</h4>
-        </div>
-    )
-}
-
-const Body = () => {
-    return (
-        <div className="body">
-        <div className="search">Search</div>
-        <div className="res-container">
-            {
-                restaurantList.map((restaurant) => {
-                    return <RestaurantCard key = {restaurant.info.id} restData = {restaurant}/>;
-                })
-            }
-        </div>
-        </div>
-    )
-}
-
-//Top level Component
-const AppLayout = () => {
-     return (
-        <div className="app">
-           <Header/>
-           <Body/>
-        </div>
-    );
-}
-
-const restaurantList = [
+let restaurantList = [
     {
       info: {
         id: "10894",
@@ -451,6 +359,4 @@ const restaurantList = [
     },
   ];
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-
-root.render(<AppLayout/>); 
+export default restaurantList;
